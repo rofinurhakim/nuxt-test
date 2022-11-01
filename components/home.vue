@@ -6,25 +6,6 @@
                     <img src="https://t4.ftcdn.net/jpg/01/19/25/79/360_F_119257979_B3B8wWeNZO3J9YoRT0updssvsMhcnTCo.jpg" alt="">
                 </div>
             </header>
-
-            <nav class="menu">
-                <div class="menu-toggle">
-                    <input type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="brand">
-                    <h1>Japanese Food</h1>
-                </div>
-                <ul class="menu-list">
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Product</a></li>
-                </ul>
-            </nav>
-
             <section class="cards">
                 <div class="card">
                     <div class="icon"></div>
