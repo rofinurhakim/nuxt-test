@@ -3,7 +3,7 @@
         <div class="container">
             <header class="header">
                 <div class="hero">
-                    <img class="w-60" src="https://img.freepik.com/premium-vector/japanese-ramen-noodle-illustration-noodle-bowl-asia-food-premium-vector_477760-32.jpg?w=2000" alt="">
+                    <img src="https://t4.ftcdn.net/jpg/01/19/25/79/360_F_119257979_B3B8wWeNZO3J9YoRT0updssvsMhcnTCo.jpg" alt="">
                 </div>
                 <div class="features features-1">
                     <h4>hahah</h4>
@@ -21,7 +21,6 @@
                     <span></span>
                     <span></span>
                     <span></span>
-
                 </div>
                 <div class="brand">
                     <h1>Japanese Food</h1>
@@ -33,12 +32,51 @@
                     <li><a href="">Product</a></li>
                 </ul>
             </nav>
+
+            <section class="cards">
+                <div class="card">
+                    <div class="icon"></div>
+                    <h3>Ramen</h3>
+                    <p>lorem ipsum dimsum</p>
+                </div>
+                <div class="card">
+                    <div class="icon"></div>
+                    <h3>Ramen</h3>
+                    <p>lorem ipsum dimsum</p>
+                </div>
+                <div class="card">
+                    <div class="icon"></div>
+                    <h3>Ramen</h3>
+                    <p>lorem ipsum dimsum</p>
+                </div>
+                <div class="card">
+                    <div class="icon"></div>
+                    <h3>Ramen</h3>
+                    <p>lorem ipsum dimsum</p>
+                </div>
+                <div class="card">
+                    <div class="icon"></div>
+                    <h3>Ramen</h3>
+                    <p>lorem ipsum dimsum</p>
+                </div>
+            </section>
         </div>
     </div>
 </template>
 
 <script>
+const menuToggle = document.querySelector('.menu-toggle')
+const nav = document.querySelector('nav,ul')
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide')
+        })
+
+
+</script>
+
+<script>
 export default {
-    name:'home'
+    name: 'home'
 }
 </script>
