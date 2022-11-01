@@ -5,14 +5,6 @@
                 <div class="hero">
                     <img src="https://t4.ftcdn.net/jpg/01/19/25/79/360_F_119257979_B3B8wWeNZO3J9YoRT0updssvsMhcnTCo.jpg" alt="">
                 </div>
-                <div class="features features-1">
-                    <h4>hahah</h4>
-                    <p>asnaj</p>
-                </div>
-                <div class="features features-2">
-                    <h4>hahah</h4>
-                    <p>asnaj</p>
-                </div>
             </header>
 
             <nav class="menu">
@@ -66,13 +58,11 @@
 
 <script>
 const menuToggle = document.querySelector('.menu-toggle')
-const nav = document.querySelector('nav,ul')
+const nav = document.querySelector('nav ul')
 
         menuToggle.addEventListener('click', function () {
             nav.classList.toggle('slide')
         })
-
-
 </script>
 
 <script>
