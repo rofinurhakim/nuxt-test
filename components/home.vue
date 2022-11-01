@@ -7,47 +7,43 @@
                 </div>
             </header>
             <section class="cards">
-                <div class="card">
+                <div v-for="product in products.data" :key = "product.id" class="card">
                     <div class="icon"></div>
-                    <h3>Ramen</h3>
+                    <h3>{{product.title}}</h3>
                     <p>lorem ipsum dimsum</p>
                 </div>
-                <div class="card">
-                    <div class="icon"></div>
-                    <h3>Ramen</h3>
-                    <p>lorem ipsum dimsum</p>
-                </div>
-                <div class="card">
-                    <div class="icon"></div>
-                    <h3>Ramen</h3>
-                    <p>lorem ipsum dimsum</p>
-                </div>
-                <div class="card">
-                    <div class="icon"></div>
-                    <h3>Ramen</h3>
-                    <p>lorem ipsum dimsum</p>
-                </div>
-                <div class="card">
-                    <div class="icon"></div>
-                    <h3>Ramen</h3>
-                    <p>lorem ipsum dimsum</p>
-                </div>
+                
             </section>
+
         </div>
     </div>
 </template>
 
-<script>
-const menuToggle = document.querySelector('.menu-toggle')
-const nav = document.querySelector('nav ul')
 
-        menuToggle.addEventListener('click', function () {
-            nav.classList.toggle('slide')
-        })
-</script>
 
 <script>
 export default {
-    name: 'home'
+    name: 'home',
+    data() {
+        return{
+            products:[]
+        }
+    },
+    
+  methods: {
+        async getData() {
+            await this.$axios
+            .get("https://my-json-server.typicode.com/typicode/demo/posts" )
+            .then((res) => {
+            this.products = res;
+            console.log(this.products, 'masuk')
+        });
+        },
+  },
+
+  mounted() {
+      this.getData()
+  },
+
 }
 </script>
