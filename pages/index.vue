@@ -9,7 +9,7 @@
             </header>
             <section class="cards">
                  <div v-for="product in products.data" :key = "product.id" class="card">
-                     <nuxt-link :to="'product-detail/'+product.id">
+                     <nuxt-link :to="'product/'+product.id">
                         <div class="icon">
                             <img :src="product.picture" alt="">
                         </div>
