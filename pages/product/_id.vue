@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import '../../assets/product.css'
 export default {
     data() {
@@ -26,7 +27,7 @@ export default {
     methods: {
     async getDataId() {
       const _this = this;
-      await this.$axios
+      await axios
         .get("https://my-json-server.typicode.com/rofinurhakim/test.json/posts/" + this.$route.params.id)
         .then((response) => {
           this.product = response.data;
