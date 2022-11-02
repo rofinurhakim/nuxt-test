@@ -37,10 +37,9 @@ export default {
   methods: {
         async getData() {
             await this.$axios
-            .get("http://localhost:8000/posts" )
+            .get("https://my-json-server.typicode.com/rofinurhakim/test.json/posts" )
             .then((res) => {
             this.products = res;
-            console.log(this.products, 'masuk')
         });
         },
   },

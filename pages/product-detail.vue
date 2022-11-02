@@ -27,10 +27,9 @@ export default {
     async getDataId() {
       const _this = this;
       await this.$axios
-        .get("http://localhost:8000/posts/" + this.$route.params.id)
+        .get("https://my-json-server.typicode.com/rofinurhakim/test.json/posts/" + this.$route.params.id)
         .then((response) => {
           this.product = response.data;
-          console.log(this.product, 'masuk')
         });
     },
     },
