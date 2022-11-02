@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import '../assets/product.css'
+import '../../assets/product.css'
 export default {
     data() {
         return {
