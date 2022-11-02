@@ -42,12 +42,14 @@
 
 @media  (max-width: 768px) {
     .row {
+        display: flow-root;
         flex-wrap: wrap;
     }
 }
 
 @media  (max-width: 600px) {
     .row {
+        display: flow-root;
         flex-wrap: wrap;
     }
 }

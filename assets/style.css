@@ -3,17 +3,21 @@
     padding: 0;
 }
 
-body{margin: 50px;}
+body{margin: 60px;}
 
 .container{
     display: grid;
     gap: 10px;
 }
 
-.header{
-  
+a{
+    text-decoration: none;
+    color: white;
 }
 
+.icon img {
+    width: 100%;
+}
 
 .hero{
     grid-area: hero;
@@ -140,10 +144,6 @@ body{margin: 50px;}
     .menu .brand{
         display:none;
     }
-
-    .hero > * {
-        display: block;
-    }
 }
 @media  (max-width:768px) {
 
@@ -179,6 +179,9 @@ body{margin: 50px;}
     }
 }
 @media  (max-width:600px) {
+    .hero img {
+        width: 100%;
+    }
     .header {
         grid-template-areas: 
         'hero'

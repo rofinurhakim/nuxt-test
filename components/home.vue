@@ -7,10 +7,14 @@
                 </div>
             </header>
             <section class="cards">
-                <div v-for="product in products.data" :key = "product.id" class="card">
-                    <div class="icon"></div>
-                    <h3>{{product.title}}</h3>
-                    <p>lorem ipsum dimsum</p>
+                 <div v-for="product in products.data" :key = "product.id" class="card">
+                     <nuxt-link :to="'product-detail/'+product.id">
+                        <div class="icon">
+                            <img :src="product.picture" alt="">
+                        </div>
+                        <h3>{{product.name}}</h3>
+                     </nuxt-link>
+                    
                 </div>
                 
             </section>
@@ -33,7 +37,7 @@ export default {
   methods: {
         async getData() {
             await this.$axios
-            .get("https://my-json-server.typicode.com/typicode/demo/posts" )
+            .get("http://localhost:8000/posts" )
             .then((res) => {
             this.products = res;
             console.log(this.products, 'masuk')
